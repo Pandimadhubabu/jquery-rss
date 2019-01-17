@@ -10,6 +10,14 @@
 
   <script src="//code.jquery.com/jquery-1.6.4.min.js"></script>
     <script>
+    jQuery(function($) {
+      $("#rss-feeds").rss("https://feeds.feedburner.com//mnrlive/AiJO1",
+      {
+        entryTemplate:'<hr> <p> <strong><a href="{url}">{title}</a></strong>'
+      })
+    })
+  </script>
+    <script>
       jQuery(function($) {
         $("#rss-feeds").rss("https://feeds.feedburner.com/mnrlive/AiJO1", {
           limit: 20,
